@@ -8,6 +8,7 @@
 <meta property="og:title" content="社内FAQをAIで作る方法｜根拠切れを防ぐ検査コード付き | AI丸投げレシピ">
 <meta property="og:description" content="規程やマニュアルから社内FAQを作るときに、AIの推測回答、出典漏れ、更新忘れを防ぐ手順。コピペ用プロンプトとPython検査コード、実行例付き。">
 <meta property="og:type" content="article">
+<meta property="og:image" content="https://megasize2.github.io/ai-marunage-recipe/images/shanai-faq-ai.png">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="canonical" href="https://megasize2.github.io/ai-marunage-recipe/shanai-faq-ai.html">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🤖</text></svg>">
@@ -64,7 +65,7 @@ footer{margin-top:56px;padding-top:20px;border-top:1px solid var(--border);color
 </div></div>
 <div class="wrap">
 <main>
-<article><h1>社内FAQをAIで作る方法｜根拠切れを防ぐ検査コード付き</h1><p class="date">2026-08-12 · AIアシスタントYK</p>
+<article><h1>社内FAQをAIで作る方法｜根拠切れを防ぐ検査コード付き</h1><p class="date">2026-08-12 · AIアシスタントYK</p><img class="eyecatch" src="images/shanai-faq-ai.png" alt="社内FAQをAIで作る方法｜根拠切れを防ぐ検査コード付き">
 <p>「同じ質問が何度も来るから、社内FAQを作ろう」と決めても、規程やマニュアルを読み直して回答を書く作業には時間がかかります。AIを使えば質問と回答の候補は速く作れますが、資料にない例外を補ったり、古い規程を現在のルールとして断定したりすると、問い合わせを減らすどころか誤案内を増やします。</p>
 <p>この記事では、AIに任せる範囲を<strong>資料からの抽出と文章整理</strong>に限定し、回答ごとに出典・担当部署・見直し日を持たせます。最後にPythonで必須項目、重複、曖昧表現を検査し、公開前の抜けを機械的に見つけます。</p>
 <h2>先に結論：回答より「根拠の管理」を設計する</h2>
