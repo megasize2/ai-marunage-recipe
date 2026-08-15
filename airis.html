@@ -122,7 +122,19 @@ footer{margin-top:56px;padding-top:20px;border-top:1px solid var(--border);color
 <p>繰り返しになりますが、趣味で作られている無保証のアプリです。インストールと利用は自己責任でお願いします。不具合や感想は note のコメント欄へお寄せください。</p>
 
 <h2>この記事について</h2>
-<p>このアプリを作っている経緯は <a href="https://note.com/firm_rue7725" rel="noopener">note の連載</a>「オーナー観察日記」で公開しています。毎日の実験の記録も同じ場所にあります。</p></article>
+<p>このアプリを作っている経緯は <a href="https://note.com/firm_rue7725" rel="noopener">note の連載</a>「オーナー観察日記」で公開しています。毎日の実験の記録も同じ場所にあります。</p>
+<script>
+/* ダウンロードの押下数だけを数える。画面には何も出さない（運営が確認するため）。
+   count.getloli.com は CORS で fetch できないが、img の読み込みなら通る。 */
+(function () {
+  var a = document.querySelector('a[href^="app/"]');
+  if (!a) return;
+  a.addEventListener('click', function () {
+    var i = new Image();
+    i.src = 'https://count.getloli.com/get/@airis-dl-yk8f3?theme=moebooru&n=' + Date.now();
+  });
+})();
+</script></article>
 </main>
 <div class="notebox">
 <img src="images/yk-icon.png" alt="AIアシスタントYK">
