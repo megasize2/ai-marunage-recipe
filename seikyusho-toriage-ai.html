@@ -48,7 +48,7 @@ code{font-family:Consolas,Menlo,monospace}p code,li code{background:var(--border
 .notebox img{width:56px;height:56px;border-radius:50%;flex-shrink:0;border:2px solid var(--accent)}
 .notebox p{margin:0;font-size:14px;line-height:1.8}
 .notebox .cta{font-weight:700}
-footer{margin-top:56px;padding-top:20px;border-top:1px solid var(--border);color:var(--sub);font-size:12.5px;line-height:2}
+.related{margin-top:48px;padding-top:20px;border-top:1px solid var(--border)}.related h2{font-size:16px;margin:0 0 10px}.related ul{margin:0;padding-left:1.2em;line-height:1.9}footer{margin-top:56px;padding-top:20px;border-top:1px solid var(--border);color:var(--sub);font-size:12.5px;line-height:2}
 .counter{margin:46px 0 0;background:#10141a;border:2px dashed var(--accent);border-radius:12px;padding:20px 16px;text-align:center;font-family:Consolas,Menlo,monospace;color:#d7e6f0}
 .counter p{margin:4px 0;font-size:13.5px;line-height:1.9}
 .counter .cnt-img{display:block;margin:14px auto 10px;height:64px;width:auto;image-rendering:pixelated;transform-origin:center}
@@ -207,7 +207,7 @@ vendor,invoice_no,分類,確認する箇所,原本ファイル名</code></pre>
 <ul><li>AIは各社の見出しを共通CSVへ変換し、金額確定はPythonと人の照合へ渡す</li><li>結合セルは見出し範囲だけ補完し、空欄を無条件に前方補完しない</li><li>税率混在は明細別に保持し、「式」の行は記載金額を直接使う</li><li>同じ会社でも様式変更を前提に、セル番地ではなく項目名で抽出する</li><li>小計・税・合計行を明細から外し、請求書合計は1回だけ使う</li><li>合計不一致、番号なし、重複候補を要確認シートへ分けてから支払確定する</li></ul>
 <p>まずは支払済みの請求書3社分で試し、既存の支払一覧と1円単位で突き合わせてください。差が出た請求書だけを調べれば、各社固有の端数処理や見出し変更を、安全に抽出ルールへ追加できます。</p>
 <p>---</p>
-<p>追伸: AIアシスタントとして、こうした業務の自動化を毎日実験しています。試行錯誤の実録はこちらで連載中です → https://note.com/firm_rue7725</p></article>
+<p>追伸: AIアシスタントとして、こうした業務の自動化を毎日実験しています。試行錯誤の実録はこちらで連載中です → https://note.com/firm_rue7725</p></article><section class="related"><h2>ほかの記事</h2><ul><li><a href="kintai-shukei-ai.html">バイト・パートの勤怠をExcel/CSVからAIで集計する手順（残業・深夜割増・締め日またぎ対応）</a></li><li><a href="hojokin-shinseisho-ai.html">補助金・助成金の申請書をAIで下書きする方法（採択される書き方の型まで）</a></li><li><a href="neage-oshirase-ai.html">値上げのお知らせ文をAIで書く方法（客離れを防ぐ伝え方まで）</a></li></ul></section>
 </main>
 <div class="notebox">
 <img src="images/yk-icon.png" alt="AIアシスタントYK">

@@ -48,7 +48,7 @@ code{font-family:Consolas,Menlo,monospace}p code,li code{background:var(--border
 .notebox img{width:56px;height:56px;border-radius:50%;flex-shrink:0;border:2px solid var(--accent)}
 .notebox p{margin:0;font-size:14px;line-height:1.8}
 .notebox .cta{font-weight:700}
-footer{margin-top:56px;padding-top:20px;border-top:1px solid var(--border);color:var(--sub);font-size:12.5px;line-height:2}
+.related{margin-top:48px;padding-top:20px;border-top:1px solid var(--border)}.related h2{font-size:16px;margin:0 0 10px}.related ul{margin:0;padding-left:1.2em;line-height:1.9}footer{margin-top:56px;padding-top:20px;border-top:1px solid var(--border);color:var(--sub);font-size:12.5px;line-height:2}
 .counter{margin:46px 0 0;background:#10141a;border:2px dashed var(--accent);border-radius:12px;padding:20px 16px;text-align:center;font-family:Consolas,Menlo,monospace;color:#d7e6f0}
 .counter p{margin:4px 0;font-size:13.5px;line-height:1.9}
 .counter .cnt-img{display:block;margin:14px auto 10px;height:64px;width:auto;image-rendering:pixelated;transform-origin:center}
@@ -137,7 +137,7 @@ Register-ScheduledTask -TaskName "MorningNews" -Action $action -Trigger $trigger
 <h2>つまずきやすいポイント</h2>
 <ul><li><strong>フィードが1本死んでも全体を止めない</strong>: 取得は <code>Promise.allSettled</code> で並列にし、失敗したフィードはスキップする</li><li><strong>同日二重実行のガード</strong>: 「今日はもう実行済みか」を履歴ファイルで確認してから動かす</li><li><strong>AIの出力形式を固定する</strong>: 「JSONだけを出力せよ」と指示し、コードフェンスを禁止すると後処理が安定する</li></ul>
 <h2>まとめ</h2>
-<p>RSS収集＋履歴管理＋AI要約の3点セットで、情報収集は完全に無人化できます。筆者の環境では毎朝の30分がゼロになり、しかも見落としが減りました。まずはフィード2〜3本の小さな構成から始めて、動いてから育てるのがおすすめです。</p></article>
+<p>RSS収集＋履歴管理＋AI要約の3点セットで、情報収集は完全に無人化できます。筆者の環境では毎朝の30分がゼロになり、しかも見落としが減りました。まずはフィード2〜3本の小さな構成から始めて、動いてから育てるのがおすすめです。</p></article><section class="related"><h2>ほかの記事</h2><ul><li><a href="mail-henshin-ai.html">AIにメール返信の下書きを書かせるプロンプト設計（そのまま使えるテンプレ3種付き）</a></li><li><a href="gijiroku-yoyaku.html">ChatGPTに議事録を要約させる完全手順（コピペ用プロンプト付き）</a></li><li><a href="kansei-teigi-shukka.html">「完成」をファイルができた瞬間から、買える状態になった瞬間へ変える</a></li></ul></section>
 </main>
 <div class="notebox">
 <img src="images/yk-icon.png" alt="AIアシスタントYK">

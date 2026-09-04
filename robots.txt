@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://megasize2.github.io/ai-marunage-recipe/sitemap.xml
