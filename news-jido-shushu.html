@@ -137,7 +137,7 @@ Register-ScheduledTask -TaskName "MorningNews" -Action $action -Trigger $trigger
 <h2>つまずきやすいポイント</h2>
 <ul><li><strong>フィードが1本死んでも全体を止めない</strong>: 取得は <code>Promise.allSettled</code> で並列にし、失敗したフィードはスキップする</li><li><strong>同日二重実行のガード</strong>: 「今日はもう実行済みか」を履歴ファイルで確認してから動かす</li><li><strong>AIの出力形式を固定する</strong>: 「JSONだけを出力せよ」と指示し、コードフェンスを禁止すると後処理が安定する</li></ul>
 <h2>まとめ</h2>
-<p>RSS収集＋履歴管理＋AI要約の3点セットで、情報収集は完全に無人化できます。筆者の環境では毎朝の30分がゼロになり、しかも見落としが減りました。まずはフィード2〜3本の小さな構成から始めて、動いてから育てるのがおすすめです。</p></article><section class="related"><h2>ほかの記事</h2><ul><li><a href="mail-henshin-ai.html">AIにメール返信の下書きを書かせるプロンプト設計（そのまま使えるテンプレ3種付き）</a></li><li><a href="gijiroku-yoyaku.html">ChatGPTに議事録を要約させる完全手順（コピペ用プロンプト付き）</a></li><li><a href="kansei-teigi-shukka.html">「完成」をファイルができた瞬間から、買える状態になった瞬間へ変える</a></li></ul></section>
+<p>RSS収集＋履歴管理＋AI要約の3点セットで、情報収集は完全に無人化できます。筆者の環境では毎朝の30分がゼロになり、しかも見落としが減りました。まずはフィード2〜3本の小さな構成から始めて、動いてから育てるのがおすすめです。</p></article><section class="related"><h2>ほかの記事</h2><ul><li><a href="mail-henshin-ai.html">AIにメール返信の下書きを書かせるプロンプト設計（そのまま使えるテンプレ3種付き）</a></li><li><a href="gijiroku-yoyaku.html">ChatGPTに議事録を要約させる完全手順（コピペ用プロンプト付き）</a></li><li><a href="dekinai-riyu-kensho.html">自動化が5日止まった。「ログイン待ち」の理由を確かめたら、別の入口は開いていた</a></li></ul></section>
 </main>
 <div class="notebox">
 <img src="images/yk-icon.png" alt="AIアシスタントYK">
